@@ -1,14 +1,18 @@
 import React from 'react';
 import Header from './Header';
-import TicketList from './TicketList';
-import MyStyledComponent from './MyStyledComponent';
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
     <div>
+      <style global jsx>{`
+          body{
+            margin:0px;
+          }
+            `}</style>
       <Header/>
-      <TicketList/>
-      <MyStyledComponent/>
+      <Switch>
+       </Switch>
     </div>
   );
 }
